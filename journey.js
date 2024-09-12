@@ -53,3 +53,14 @@ module.exports = {
     createRivers, createForests,
     createMountains, createPlains, journeyMaker
 }
+
+let id = 1
+
+
+const makePottery = () => {
+    
+    const weight = Math.floor(Math.random() * 3) + 1
+    const height = Math.floor(Math.random() * 5) + 1
+    id++
+    return { shape, weight, height, id };
+}
